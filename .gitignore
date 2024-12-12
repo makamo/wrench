@@ -11,7 +11,6 @@
 # IDE and editor specific files #
 #################################
 /nbproject
-.idea
 
 # OS generated files #
 ######################
@@ -23,3 +22,13 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Tool specific files #
+#######################
+# PHPUnit
+.phpunit.result.cache
+tests.sqlite
+# JetBrains, aka PHPStorm, IntelliJ IDEA
+.idea/*
+# Visual Studio Code
+.vscode

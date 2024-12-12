@@ -19,7 +19,9 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7.14|^6",
-        "cakephp/bake": "1.*"
+        "cakephp/bake": "1.*",
+        "cakephp/cakephp-codesniffer": "^3.0",
+        "phpstan/phpstan": "*"
     },
     "autoload": {
         "psr-4": {
@@ -32,5 +34,14 @@
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
             "App\\": "tests/test_app/App"
         }
+    },
+    "scripts": {
+        "check": [
+            "@test",
+            "@cs-check"
+        ],
+        "cs-check": "phpcs --colors -p",
+        "cs-fix": "phpcbf --colors -p",
+        "test": "phpunit --colors=always"
     }
 }
