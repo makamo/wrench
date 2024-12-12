@@ -43,5 +43,10 @@
         "cs-check": "phpcs --colors -p",
         "cs-fix": "phpcbf --colors -p",
         "test": "phpunit --colors=always"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": false
+        }
     }
 }
