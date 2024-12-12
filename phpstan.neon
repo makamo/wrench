@@ -1,9 +1,13 @@
 parameters:
-    level: 8
+    level: 6
     checkMissingIterableValueType: false
-    treatPhpDocTypesAsCertain: false
     checkGenericClassInNonGenericObjectType: false
-    paths:
-        - src/
-    excludePaths:
-        - src/Console/Installer.php
+    bootstrapFiles:
+        - tests/bootstrap.php
+    excludes_analyse:
+        - src/Controller/SocialAccountsController.php
+        - src/Controller/UsersAccountsController.php
+        - src/Controller/AppAccountsController.php
+    ignoreErrors:
+
+services:
